@@ -1,6 +1,4 @@
-
-
-.body{
+.body {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -12,7 +10,7 @@
     background-position: center;
 }
 
-.top{
+.top {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -21,23 +19,26 @@
     margin-top: 7px;
 }
 
-.top-left{
+.top-left {
     background-color: rgba(255, 241, 223, 0.705);
     flex: 1;
     height: 100%;
     border-radius: 15px;
     margin-left: 10px;
     text-align: center;
-    box-shadow: 0px 5px 5px rgb(214, 202, 186,0.7);
+    box-shadow: 0px 5px 5px rgb(214, 202, 186, 0.7);
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
 }
 
-.top-left:hover{
+.top-left:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(214, 213, 186, 0.868);
     background-color: rgba(255, 246, 223, 0.893);
 }
 
-.top-right{
+.top-right {
     background-color: rgba(3, 254, 254, 0.705);
     border-radius: 15px;
     height: 100%;
@@ -45,31 +46,90 @@
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
-    box-shadow: 0px 5px 5px rgb(2, 192, 192,0.7);
+    box-shadow: 0px 5px 5px rgb(2, 192, 192, 0.7);
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
 }
 
-.top-right:hover{
+.top-right:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(2, 192, 192, 0.781);
     background-color: rgba(3, 254, 254, 0.893);
 }
 
-.content{
+.content {
     flex: 7.5;
     border-radius: 15px;
     margin: 10px;
-    background-color: rgb(238, 247, 255,0.705);
-    box-shadow: 0px 5px 5px rgb(169, 173, 177,0.7);
+    background-color: rgb(238, 247, 255, 0.705);
+    box-shadow: 0px 5px 5px rgb(169, 173, 177, 0.7);
 
 }
 
-.under-content{
-    background-color: rgba(127, 255, 212, 0.705);
+.under-content {
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgba(127, 255, 212, 0.705); */
     flex: 1.5;
     margin: 10px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     margin-top: 0px;
-    text-align: center;
-    box-shadow: 0px 5px 5px rgb(93, 186, 155,0.7);
+    /* text-align: center; */
+    /* box-shadow: 0px 5px 5px rgb(93, 186, 155,0.7); */
 
+}
+
+.ucontent-left {
+    background-color: rgba(127, 255, 212, 0.705);
+    flex: 9;
+    border-radius: 15px;
+    margin-right: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 5px rgb(93, 186, 155, 0.7);
+
+}
+
+.ucontent-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.ucontent-right-top {
+    background-color: rgba(127, 255, 212, 0.705);
+    flex: 1;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 5px rgb(93, 186, 155, 0.7);
+    text-align: center;
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+
+}
+
+.ucontent-right-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(126, 218, 187, 0.868);
+    background-color: rgba(127, 255, 212, 0.861);
+}
+
+.ucontent-right-bottom {
+    background-color: rgba(127, 255, 212, 0.705);
+    flex: 1;
+    border-radius: 15px;
+    margin-top: 5px;
+    box-shadow: 0px 5px 5px rgb(93, 186, 155, 0.7);
+    text-align: center;
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+
+}
+
+.ucontent-right-bottom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(126, 218, 187, 0.868);
+    background-color: rgba(127, 255, 212, 0.863);
 }
