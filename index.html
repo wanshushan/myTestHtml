@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wanshushan</title>
     <link href="index.css" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 
 <body class="body">
@@ -29,31 +30,52 @@
         <!-- <p style="margin: 5px;">。。。还没写好简介。。。</p> -->
         <div class="content-left">
             <!-- 主体内容左侧 -->
-            <div class="cl1 clmove">
+            <button class="cl1 clmove" data-target="crc1" onclick="showContent('crc1')">
                 <!-- cl1 -->
                 <img src="./img-icon/zhuye.png" class="climg-icon" style="width: 100px; ">
-            </div>
-            <div class="cl2 clmove">
+            </button>
+            <button class="cl2 clmove" data-target="crc2" onclick="showContent('crc2')">
                 <!-- cl2 -->
                 <img src="./img-icon/jianjie.png" class="climg-icon" style=" width:50px;">
-            </div>
-            <div class="cl3 clmove">
+            </button>
+            <button class="cl3 clmove" data-target="crc3" onclick="showContent('crc3')">
                 <!-- cl3 -->
                 <img src="./img-icon/pic.png" class="climg-icon" style=" width:50px;">
-            </div>
-            <div class="cl4 clmove">
+            </button>
+            <button class="cl4 clmove" data-target="crc4" onclick="showContent('crc4')">
                 <!-- cl4 -->
                 <img src="./img-icon/more.png" class="climg-icon" style=" width:50px;
                 ">
-            </div>
-            <div class="cl5 clmove">
+            </button>
+            <button class="cl5 clmove" data-target="crc5" onclick="showContent('crc5')">
                 <!-- cl5 -->
                 <img src="./img-icon/about2.png" class="climg-icon" style=" width:50px;
                 ">
-            </div>
+            </button>
         </div>
         <div class="content-right">
             <!-- 主体内容右侧 -->
+            <div class="crc active" id="crc1">
+                <!-- cl1显示：主页 -->
+                 <p>欢迎来到wanshushan的个人博客</p>
+            </div>
+            <div class="crc" id="crc2">
+                <!-- cl2显示：简介 -->
+                 <p>大家好我叫万书山</p>
+            </div>
+            <div class="crc" id="crc3">
+                <!-- cl3显示：作品集 -->
+                 <p>空空如也的作品集</p>
+                 <p>可以点击页面下方GitHub图标前往查看其余作品</p>
+            </div>
+            <div class="crc" id="crc4">
+                <!-- cl4显示：更多 -->
+                <p>更多内容敬请期待</p>
+            </div>
+            <div class="crc" id="crc5">
+                <!-- cl5显示：关于 -->
+                 <p>@wanshushan</p>
+            </div>
         </div>
     </div>
     <div class="under-content">
@@ -96,6 +118,11 @@
         </div>
 
     </div>
+
+
+
+  
+
 </body>
 
 </html>
