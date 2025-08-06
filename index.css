@@ -177,8 +177,11 @@
     flex: 9;
     border-radius: 15px;
     margin-left: 5px;
+    height: 100%;
     background-color: rgb(238, 247, 255, 0.705);
     box-shadow: 0px 5px 5px rgb(169, 173, 177, 0.7);
+    text-align: center;
+    align-items: center;
 }
 
 .crc{
@@ -187,6 +190,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    height: 100%;
 }
 
 
@@ -194,6 +198,9 @@
 .crc.active{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .under-content {
